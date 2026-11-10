@@ -1,0 +1,8 @@
+# 网络抖动时有限重试，避免给目标站点造成过大压力。
+timeout = 20
+max_retries = 2
+max_concurrency = 4
+
+# 不访问本地、私有网络或邮件地址；仍检查仓库内的相对文件链接。
+exclude_all_private = true
+include_mail = false
